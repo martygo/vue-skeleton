@@ -8,6 +8,10 @@
 import CardMovieList from "@/components/Card/CardMovieList";
 
 export default {
-	components: { CardMovieList }
+	components: { CardMovieList },
+
+	setup() {
+		console.log(process.env.VUE_APP_API_KEY);
+	}
 };
 </script>
