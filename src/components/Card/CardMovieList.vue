@@ -2,19 +2,16 @@
 	<div class="movies-list">
 		<card-movie :movies="movies" />
 
-		<card-movie-skeleton
-			:skeletonValue="skeletonConfig.numberCard"
-			:skeletonHidden="skeletonConfig.isHidden"
-		/>
+		<card-movie-skeleton :skeletonHidden="skeletonConfig.isHidden" />
 	</div>
 </template>
 
 <script>
-import CardMovie from "./CardMovie.vue";
-import CardMovieSkeleton from "./CardMovieSkeleton";
-
 import { onMounted } from "vue";
 import { useRequest } from "@/composables/request";
+
+import CardMovie from "./CardMovie.vue";
+import CardMovieSkeleton from "./CardMovieSkeleton";
 
 export default {
 	components: { CardMovie, CardMovieSkeleton },

@@ -2,8 +2,8 @@
 	<div
 		class="movie skeleton"
 		v-show="!skeletonHidden"
-		v-for="(skeleton, index) in skeletonValue"
-		:key="index"
+		v-for="skeleton in 4"
+		:key="skeleton"
 	>
 		<div class="movie-image"></div>
 		<div class="detail">
@@ -24,12 +24,6 @@ export default {
 			type: Boolean,
 			required: true,
 			default: false
-		},
-
-		skeletonValue: {
-			type: Number,
-			required: true,
-			default: 4
 		}
 	}
 };
