@@ -1,7 +1,5 @@
 # Vue skeleton
 
-![skeleton](./src/assets/peek.gif)
-
 ## Project setup
 
 ```
